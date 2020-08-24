@@ -1,0 +1,139 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    letter-spacing: 1px;
+}
+header{
+    background-color: lightgrey;
+    padding: 20px auto;
+}
+h1,h2{
+    font-weight: normal
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    border-radius: 6px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgrey;
+}
+
+#page-banner{
+    background: #eee;
+    padding: 10px 0;
+}
+#page-banner h1, #page-banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-banner input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid#ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+}
+
+#book-list, #add-book, #tabbed-content{
+    margin: 30px;
+}
+
+#book-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#book-list li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+#book-list li:hover{
+    border-color: #9361bf;
+}
+
+.delete{
+    float: right;
+    background: #9361bf;
+    padding: 6px;
+    border-radius: 4px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.delete:hover{
+    background: black;
+}
+#add-book{
+    width: 400px;
+    margin: 0 auto;
+}
+#add-book input{
+    width: 300px;
+    margin: 20px 0; 
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+    box-sizing: border-box;
+    float: left;
+}
+#add-book button{
+    background: #9361bf;
+    border: 1px solid #9361bf;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 0px 4px 4px 0px;
+    color: whitesmoke;
+    float: left;
+    display: inblock;
+    margin: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px 0;
+    border-left: 0;
+}
+#add-book:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#add-book #hide{
+    width: 30px;
+}
+#add-book label{
+  line-height: 52px;
+}
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#tabbed-content.panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+#tabbed-content .panel.active{
+    display: block;
+}
+/* .hide-book{
+    display: inline;
+} */
